@@ -1,0 +1,30 @@
+./" Manage for _printf.
+.TH _printf 3 "April 19 2022" "1.0" "program Manual for _printf"
+.SH NAME
+ _printf - formatted output conversion and print data.
+.SH SYNOPSIS
+.nf
+.BI printf (FORMAT, ARGUMENT)...
+.PP
+.BI "#include 'main.h'
+.BI "#include <stdarg.h>"
+.BI "#include <unistd.h>"
+.PP
+.BI "int _printf(const char *format, ...);"
+.BI "int print_prg(va_list __attribute__((unused)), char *, unsigned int);"
+.BI "int print_chr(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_str(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_int(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_bnr(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_unt(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_oct(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_hex(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_upx(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_usr(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_add(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_rev(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_rot(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int prinlint(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int prinlunt(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int prinloct(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int prinlhex(va_list arguments, char *buf, unsigned int ibuf);"
