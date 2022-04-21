@@ -14,7 +14,7 @@ int (*get_pfunc(char x))(va_list args)
 		{"%", print_percent},
 		{"d", print_d},
 		{"i", print_i},
-		{"NULL, NULL"}
+		{NULL, NULL}
 	};
 	while (arr[i].va)
 	{
