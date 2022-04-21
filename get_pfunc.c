@@ -20,7 +20,7 @@ int (*get_pfunc(char x))(va_list args)
 	{
 		if (x == arr[i].va[0])
 			return (arr[i].f);
-		i++
+		i++;
 	}
 	return (NULL);
 }
