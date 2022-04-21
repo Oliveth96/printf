@@ -15,7 +15,7 @@ int (*get_pfunc(char x))(va_list args)
 		{"d", print_d},
 		{"i", print_i},
 		{"NULL, NULL"}
-	}
+	};
 	while (arr[i].va)
 	{
 		if (x == arr[i].va[0])
