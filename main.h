@@ -8,7 +8,7 @@
 #include <limits.h>
 
 /**
- * struct specifier - struct specifier
+ * struct list - struct list
  * @va: valid character
  * @f: the associated functions.
  */
@@ -23,5 +23,6 @@ int print_c(va_list args);
 int print_percent(va_list args);
 int print_d(va_list args);
 int print_i(va_list args);
+int (*get_printf_func(char x))(va_list args);
 
 #endif
