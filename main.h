@@ -7,14 +7,21 @@
 #include <stdarg.h>
 #include <limits.h>
 
+/**
+ * struct specifier - struct specifier
+ * @va: valid character
+ * @f: the associated functions.
+ */
+typedef struct list
+{
+	char *va;
+	int (*f)(va_list);
+} list_t;
 int _putchar(char c);
 int _printf(const char *format, ...);
-void *malloc(size_t size);
-void free(void *ptr);
-ssize_t write(int fd, const void *buf, size_t count);
-void va_start(va_list ap, last);
-type va_arg(va_list ap, type);
-void va_end(va_list ap);
-void va_copy(va_list dest, va_list src);
+int print_c(va_list args);
+int print_percent(va_list args);
+int print_d(va_list args);
+int print_i(va_list args);
 
 #endif
